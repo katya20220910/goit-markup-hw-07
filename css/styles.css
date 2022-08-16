@@ -64,13 +64,13 @@ img {
   padding-bottom: 94px;
 }
 
-.list-grid {
+.grid {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent-grid);
 }
 
-.grid-cards {
+.grid__cards {
   flex-basis: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
 }
 
@@ -83,7 +83,7 @@ img {
   border-bottom: 1px solid var(--border-header);
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -98,11 +98,11 @@ img {
   color: var(--accent-text-cl);
 }
 
-.logo-header {
+.header__logo {
   margin-right: 93px;
 }
 
-.logo-part {
+.header__logo--part {
   color: var(--nav-text-cl);
 }
 
@@ -111,28 +111,28 @@ img {
   margin-right: auto;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
-.nav-link-contact:focus,
-.nav-link-contact:hover,
-.nav-link:focus,
-.nav-link:hover,
-.nav-link-current {
+.header__link-contact:focus,
+.header__link-contact:hover,
+.nav__link:focus,
+.nav__link:hover,
+.nav__link--current {
   color: var(--accent-text-cl);
 }
 
-.list-nav-contact {
+.header__contact {
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
-.nav-link,
-.nav-link-contact {
+.nav__link,
+.header__link-contact {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -140,16 +140,16 @@ img {
   transition: color var(--anime-basic);
 }
 
-.header-icon {
+.header__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.nav-link-current {
+.nav__link--current {
   position: relative;
 }
 
-.nav-link-current::after {
+.nav__link--current::after {
   content: '';
   position: absolute;
   bottom: -1px;
@@ -178,7 +178,7 @@ img {
   margin-left: auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -231,7 +231,7 @@ img {
   overflow: hidden;
 }
 
-.about-group {
+.about__group {
   display: flex;
   height: 120px;
   align-items: center;
@@ -241,7 +241,7 @@ img {
   margin-bottom: 30px;
 }
 
-.about-title {
+.about__title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -256,7 +256,7 @@ img {
   padding-top: 0;
 }
 
-.title-section {
+.section__title {
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
@@ -265,12 +265,12 @@ img {
   color: var(--title-text-cl);
 }
 
-.work-list {
+.work__list {
   --item: 3;
   position: relative;
 }
 
-.work-text-img {
+.work__text-img {
   position: absolute;
   min-height: 70px;
   width: 100%;
@@ -280,7 +280,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-text {
+.work__text {
   font-weight: 700;
   font-size: 14px;
   font-style: normal;
@@ -297,19 +297,19 @@ img {
   background-color: var(--third-bg-cl);
 }
 
-.team-card {
+.team__card {
   background-color: var(--second-text-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-wrapper {
+.team__wrapper {
   padding: 30px;
   text-align: center;
 }
 
-.team-name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -317,7 +317,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team-proffesion {
+.team__proffesion {
   font-size: 16px;
   line-height: calc(19 / 16);
   margin-bottom: 16px;
@@ -325,11 +325,11 @@ img {
 
 /* Постоянные клиента */
 
-.client-list {
+.client__list {
   --item: 6;
 }
 
-.client-logo {
+.client__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -340,12 +340,12 @@ img {
   transition: color var(--anime-basic);
 }
 
-.client-logo:focus,
-.client-logo:hover {
+.client__logo:focus,
+.client__logo:hover {
   color: var(--accent-text-cl);
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
 
@@ -558,14 +558,14 @@ img {
 
 /* Соціальні картинка */
 
-.social-list {
+.social {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -576,17 +576,17 @@ img {
   transition: color var(--anime-basic), background-color var(--anime-basic);
 }
 
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
 
-.footer .social-link {
+.footer .social__link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--second-text-cl);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
   color: var(--second-text-cl);
   background-color: var(--accent-text-cl);
 }
