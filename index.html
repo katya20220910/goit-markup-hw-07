@@ -13,13 +13,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/mail.min.css"/>
+  <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 
 <body class="data-page">
   <header class="header">
     <div class="container header__container">
-      <a class="logo header__logo" href="/" lang="en">Web<span class=".header__logo--part">Studio</span></a>
+      <a class="logo header__logo" href="/" lang="en">Web<span class="header__logo--part">Studio</span></a>
       <nav class="nav">
         <ul class="list nav__list">
           <li class="nav__item">
@@ -337,25 +338,25 @@
   </main>
   <footer class="footer">
     <div class="container footer-container">
-      <div class="footer-part">
-        <a class="logo logo-footer" href="/" lang="en">Web<span class="logo-partfooter">Studio</span></a>
-        <address class="addres">
-          <ul class="list list-footer">
-            <li class="list-item-footer">
-              <a class="link link-addres" href="https://goo.gl/maps/phjNTahfktrUzCqq9" target="_blank"
+      <div class="footer__part">
+        <a class="logo footer__logo" href="/" lang="en">Web<span class="footer__logo--part">Studio</span></a>
+        <address class="footer__contacts">
+          <ul class="list footer__list">
+            <li class="footer__item">
+              <a class="link footer__addres" href="https://goo.gl/maps/phjNTahfktrUzCqq9" target="_blank"
                 rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="list-item-footer">
-              <a class="link link-contact" href="mailto:info@example.com">info@example.com</a>
+            <li class="footer__item">
+              <a class="link footer__contact" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li class="list-item-footer">
-              <a class="link link-contact" href="tel:++380991111111">+38 099 111 11 11</a>
+            <li class="footer__item">
+              <a class="link footer__contact" href="tel:++380991111111">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
-      <div class="footer-part">
-        <h3 class="footer-title">Присоединяйтесь</h3>
+      <div class="footer__part">
+        <h3 class="footer__title">Присоединяйтесь</h3>
         <ul class="list social">
           <li>
             <a class="link social__link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg
@@ -387,15 +388,15 @@
           </li>
         </ul>
       </div>
-      <div class="footer-subscribing">
-        <h3 class="footer-title">Подпишитесь на рассылку</h3>
-        <form name="subscribing" class="subscribing-form">
+      <div class="footer__subscribing">
+        <h3 class="footer__title">Подпишитесь на рассылку</h3>
+        <form name="subscribing" class="footer__subscribing-form">
           <label>
-            <input class="subscribing-input" type="email" name="email" placeholder="E-mail"/>
+            <input class="footer__input" type="email" name="email" placeholder="E-mail"/>
           </label>
-          <button class="button btn-subscribing" type="submit">
+          <button class="button footer__btn" type="submit">
             Подписаться
-            <svg class="subscribing-icon" width="24" height="24">
+            <svg class="footer__icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-send"></use>
             </svg>
           </button>
@@ -405,54 +406,54 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn" data-modal-close>
+      <button class="modal__btn" data-modal-close>
         <svg class="modal-btn-icon" width="18" height="18">
           <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
       <form class="form-order" name="modal-form" autocomplete="off">
-        <strong class="form-order-title">Оставьте свои данные, мы вам перезвоним</strong>
-        <div class="form-order-group">
-          <label class="form-order-wrap">
-            <span class="form-order-text">Имя</span>
-            <span class="form-order-part">
-            <input class="form-order-input" type="text" name="name"/>
-             <svg class="form-order-icon" width="18" height="18">
+        <strong class="form-order__title">Оставьте свои данные, мы вам перезвоним</strong>
+        <div class="form-order__group">
+          <label class="form-order__components">
+            <span class="form-order__text">Имя</span>
+            <span class="form-order__wrap">
+            <input class="form-order__input" type="text" name="name"/>
+             <svg class="form-order__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-person-black"></use>
             </svg>
             </span>
           </label>
-          <label class="form-order-wrap">
-            <span class="form-order-text">Телефон</span>
-            <span class="form-order-part">
-            <input class="form-order-input" type="tel" name="tel"/>
-            <svg class="form-order-icon" width="18" height="18">
+          <label class="form-order__components">
+            <span class="form-order__text">Телефон</span>
+            <span class="form-order__wrap">
+            <input class="form-order__input" type="tel" name="tel"/>
+            <svg class="form-order__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-phone-black"></use>
             </svg>
             </span>
           </label>
-          <label class="form-order-wrap">
-            <span class="form-order-text">Почта</span>
-            <span class="form-order-part">
-            <input class="form-order-input" type="email" name="email"/>
-            <svg class="form-order-icon" width="18" height="18">
+          <label class="form-order__components">
+            <span class="form-order__text">Почта</span>
+            <span class="form-order__wrap">
+            <input class="form-order__input" type="email" name="email"/>
+            <svg class="form-order__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-email-black"></use>
             </svg>
             </span>
           </label>
-          <label class="form-order-wrap">
-            <span class="form-order-text">Комментарий</span>
-            <textarea class="form-order-comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
+          <label class="form-order__components">
+            <span class="form-order__text">Комментарий</span>
+            <textarea class="form-order__comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
           </label>
         </div>
-        <label class="form-order-agreement">
-          <input class="form-order-checkbox visually-hidden" type="checkbox" name="agreement"/>
-          <svg class="form-order-agreement-icon" width="16" height="15">
-            <use class="form-order-agreement-icon-uncheck" href="./images/symbol-defs.svg#icon-uncheck"></use>
-            <use class="form-order-agreement-icon-check" href="./images/symbol-defs.svg#icon-check"></use>
+        <label class="form-order__agreement">
+          <input class="form-order__checkbox visually-hidden" type="checkbox" name="agreement"/>
+          <svg class="form-order__agreement-icon" width="16" height="15">
+            <use class="form-order__agreement-uncheck" href="./images/symbol-defs.svg#icon-uncheck"></use>
+            <use class="form-order__agreement-check" href="./images/symbol-defs.svg#icon-check"></use>
           </svg>
-          <span class="form-order-agreement-text">Соглашаюсь с рассылкой и принимаю
-            <a class="form-order-agreement-link" href="">Условия договора</a>
+          <span class="form-order__agreement-text">Соглашаюсь с рассылкой и принимаю
+            <a class="form-order__agreement-link" href="">Условия договора</a>
           </span>
         </label>
         <button class="button" type="submit">Отправить</button>
