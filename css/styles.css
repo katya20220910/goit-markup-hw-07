@@ -657,7 +657,7 @@ img {
   color: var(--title-text-cl);
 }
 
-.form-orde__group {
+.form-order__group {
   margin-bottom: 20px;
 }
 
@@ -669,6 +669,10 @@ img {
 
 .form-order__components:last-child {
   margin-bottom: 0;
+}
+
+.form-order__group {
+  margin-bottom: 20px;
 }
 
 .form-order__text {
