@@ -4,7 +4,6 @@
   justify-content: center;
   gap: 10px;
 }
-
 .social__link {
   display: flex;
   align-items: center;
@@ -14,17 +13,18 @@
   border-radius: 50%;
   color: var(--icon);
   transition: color var(--anime-basic), background-color var(--anime-basic);
+
+  .footer & {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--second-text-cl);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--second-text-cl);
+    background-color: var(--accent-text-cl);
+  }
 }
 .social__icon {
   fill: currentColor;
 }
-// .footer .social__link {
-//   background-color: rgba(255, 255, 255, 0.1);
-//   color: var(--second-text-cl);
-// }
-
-// .social__link:hover,
-// .social__link:focus {
-//   color: var(--second-text-cl);
-//   background-color: var(--accent-text-cl);
-// }
